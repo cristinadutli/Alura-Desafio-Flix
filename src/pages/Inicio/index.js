@@ -11,7 +11,7 @@ function Inicio() {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/videos')
+    axios.get('https://alura-desafio-flix.vercel.app/')
       .then(response => {
         const videosData = response.data;
         const categories = videosData.reduce((acc, video) => {
@@ -48,7 +48,7 @@ function Inicio() {
     });
     setFilteredVideos(updatedFilteredVideos);
 
-    axios.delete(`http://localhost:3000/videos/${id}`)
+    axios.delete(`https://alura-desafio-flix.vercel.app/${id}`)
       .then(response => {
         console.log("Video eliminado exitosamente", response.data);
       })

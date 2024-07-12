@@ -31,7 +31,7 @@ function Card({ id, capa, link, onDelete, onEdit }) {
 
   const handleConfirmDelete = () => {
     axios
-      .delete(`http://localhost:3000/videos/${id}`)
+      .delete(`https://alura-desafio-flix.vercel.app/${id}`)
       .then((response) => {
         console.log("Video eliminado exitosamente", response.data);
         onDelete(id);

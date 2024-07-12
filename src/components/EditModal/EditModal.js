@@ -25,7 +25,7 @@ function EditModal({ video, onSave, onCancel }) {
     };
 
     axios
-      .put(`http://localhost:3000/videos/${video.id}`, updatedVideo)
+      .put(`https://alura-desafio-flix.vercel.app/${video.id}`, updatedVideo)
       .then((response) => {
         console.log("Video actualizado exitosamente", response.data);
         onSave(updatedVideo);

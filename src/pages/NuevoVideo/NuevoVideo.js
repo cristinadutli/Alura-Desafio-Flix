@@ -13,7 +13,7 @@ function NuevoVideo() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/videos")
+      .get("https://alura-desafio-flix.vercel.app/")
       .then((response) => {
         const videosData = response.data;
         const categories = videosData.reduce((acc, video) => {
@@ -43,7 +43,7 @@ function NuevoVideo() {
     };
 
     axios
-      .post("http://localhost:3000/videos", nuevoVideo)
+      .post("https://alura-desafio-flix.vercel.app/", nuevoVideo)
       .then((response) => {
         console.log("Video creado exitosamente", response.data);
 
