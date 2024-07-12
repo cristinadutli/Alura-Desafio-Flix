@@ -1,0 +1,8 @@
+.categoriasContainer {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+

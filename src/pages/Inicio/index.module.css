@@ -1,0 +1,53 @@
+.inicio {
+  padding: 20px;
+}
+
+.categorySection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.categoria {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.categoriaImg {
+  width: 432px;
+  height: 70px;
+  cursor: pointer;
+}
+
+
+
+.videoList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Espacio entre tarjetas */
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 20px); /* Ajusta según sea necesario */
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px){
+  .categorySection{
+    align-items: center;
+   gap: 10px;
+    
+  }
+  
+  .categoriaImg{
+    width: 250px;
+   
+    
+  }
+}
